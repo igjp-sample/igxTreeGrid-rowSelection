@@ -1,0 +1,12 @@
+// in component.scss
+@import '~igniteui-angular/lib/core/styles/themes/index';
+
+$custom-grid-theme: igx-grid-theme(
+    $cell-active-border-color: transparent
+);
+
+:host {
+    ::ng-deep {
+        @include igx-grid($custom-grid-theme);
+    }
+}
